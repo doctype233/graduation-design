@@ -1,0 +1,32 @@
+.footer-inner{
+   padding: 0 70px;
+    .footer-l{
+        padding: 70px 0 100px 0;
+        ul{
+            
+            padding-left: 0;
+            li{
+            float: left;
+            margin-right: 30px; 
+             a{font-weight: bold;}
+            }           
+        }
+        strong{
+            padding: 0 10px;
+            
+        }
+        .footer-logo{
+            li{margin-right:10px !important;}
+        }
+        .headline{
+            font-size: 18px;
+            font-weight: bolder;
+            line-height: 35px;
+            p{display: inline-block;}
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}

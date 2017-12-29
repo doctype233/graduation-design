@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Awwards-最佳网页设计展示平台</title>
+    
+<link rel="stylesheet" href="../css/home.css">
+<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-theme.css">
+<link rel="stylesheet" href="../css/common.css">
+
+
+</head>
+<body onbeforeunload="checkLeave()" style="transition:all 0.3s ease-in-out">
+    
+<div class="modal fade modal1" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <a class="cur">中文</a>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li><a data-toggle="modal" data-target="#login" id='modal-btn'>登录/注册</a></li>
+                    <li><a href="">主页</a></li>
+                    <li><a href="">获奖名单</a></li>
+                    <li><a href="">候选名单</a></li>
+                    <li><a href="">收藏</a></li>
+                    <li><a href="">认证机构 <div class="badge">4</div></a></li>
+                    <li><a href="">招聘 <div class="badge">7</div></a></li>
+                    <li><a href="">作品浏览</a></li>
+                    <li><a href="">电子书&amp;出版物</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li>
+                        <a href="">官方会议2018</a>
+                        <span class="first-top">2月7-9日/柏林</span>
+                        <span>5月10-11日/旧金山</span>
+                    </li>                   
+                </ul>
+            </div>
+            <div class="modal-footer">
+              <span class="pull-left">点击进入夜晚模式</span>
+              <div class="input-check-toggle check-small">
+                  <input type="checkbox" class="js-dark" id='version-color'>
+                  <label for="version-color"><div class="ball"></div></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="modal fade modal2" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <button type="button" class="close " data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <h4 class="modal-title" id="myModalLabel">请登录您的账号</h4>
+                <h4 class="modal-title hidden" id='myModalLabel2'>创建新用户</h4>
+            </div>
+            <div class="modal-body">
+                    <form class="form1">
+                        <div class="form-group">
+                            <label for="inputUser1">用户名</label>
+                            <input type="text" class="form-control" id="inputUser1" placeholder="用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword1">Password</label>
+                            <input type="password" class="form-control" id="inputPassword1" placeholder="密码">
+                        </div>
+                        <div class="btn login-mail center-block trans">
+                            <a href="">
+                                <span>登录</span>          
+                            </a>
+                        </div>
+                    </form>
+                    <form action="" class="form2 hidden">
+                        <div class="form-group">
+                            <label for="inputUser2">用户名</label>                            
+                            <input type="text" class="form-control" id="inputuser2" placeholder="用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword2">Password</label>
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="密码">
+                        </div>
+                        <div class="form-group">
+                                <label for="inputMail2">邮箱</label>
+                                <input type="text" class="form-control" id="inputMail2" placeholder="example@example.com">
+                        </div>
+                        <div class="btn login-mail1 center-block trans hidden">
+                            <a href="">
+                                <span>创建账号</span>
+                            </a>
+                        </div>
+                    </form>
+            </div>
+            <div class="modal-footer">  
+                <div class="login-mail pull-right trans">
+                    <a href="">
+                        <span class="mail-btn">邮箱登录</span>
+                        <span class="email-icon">
+                            <svg t="1514285966705" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3429"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+                                <defs>
+                                    <style type="text/css"></style>
+                                </defs>
+                                <path d="M512.01228 567.530734l465.797725-388.074549c-2.524496-0.459464-4.790096-1.512447-7.407714-1.512447L53.626361 177.943738c-2.565429 0-4.845355 1.038656-7.370875 1.512447L512.01228 567.530734 512.01228 567.530734zM1012.079506 219.623c0-4.372587-1.202385-8.42181-2.523473-12.402471L679.367869 482.420311l330.687538 330.74075c0.850367-3.333932 2.0241-6.545066 2.0241-10.149151L1012.079506 219.623 1012.079506 219.623 1012.079506 219.623zM14.483876 207.17755c-1.282203 4.00829-2.563382 8.003278-2.563382 12.444427l0 583.376631c0 3.643993 1.254573 6.842849 2.078335 10.175757l330.793962-330.767356L14.483876 207.17755 14.483876 207.17755zM647.162376 509.198188 525.320377 610.68151c-3.818979 3.252067-8.543583 4.818749-13.30912 4.818749-4.723581 0-9.474792-1.566682-13.33368-4.818749l-121.734552-101.43011L43.545772 842.625116c3.279696 0.864694 6.532787 2.065032 10.082636 2.065032L970.415594 844.690148c3.618411 0 6.869455-1.187035 10.215666-2.065032L647.162376 509.198188 647.162376 509.198188z"
+                                    p-id="3430" fill="#ffffff"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="pull-left">
+                    <a>
+                        <span class="regist">立即注册！</span>
+                        <span class="login-back hidden center-block">已有账号？现在登录</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<div class="dialog container-fluid">
+    <span class="">使用cookis确保站点获得最佳体验. <a href="">更多...</a></span>
+    <span class="go-it">忽略！</span>
+</div> 
+<div class="wrapper">
+    <header>
+        <div class="header-top nav">
+            <div class="box-left"><a href···1
+                ="">中文</a></div>
+            <div class="box-center">互联网设计、创意与创新奖</div>
+            <div class="box-right">
+                <ul>
+                    <li>
+                        <a href="">
+                           
+                            <svg t="1513573019356" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2497"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13">
+                                <defs>
+                                    <style type="text/css"></style>
+                                </defs>
+                                <path d="M567.893333 988.586667V537.642667h151.381334l22.613333-175.744H567.893333v-112.213334c0-50.858667 14.122667-85.546667 87.082667-85.546666h93.056V6.869333C731.946667 4.778667 676.736 0 612.437333 0 478.293333 0 386.432 81.92 386.432 232.32v129.578667H234.666667v175.744h151.765333V988.586667H567.893333z"
+                                    p-id="2498" fill="#202121"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                                
+                                <svg t="1513572778183" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1740"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z"
+                                        p-id="1741" fill="#202121"></path>
+                                </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                                
+                                <svg t="1513571895282" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1015"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14">
+                                    <defs>
+                                        <style type="text/css"></style>
+                                    </defs>
+                                    <path d="M842 319.5c0 15.2-12.3 27.5-27.5 27.5h-110c-15.2 0-27.5-12.3-27.5-27.5v-110c0-15.2 12.3-27.5 27.5-27.5h110c15.2 0 27.5 12.3 27.5 27.5v110z m0 495c0 19.3-8.3 27.5-27.5 27.5h-605c-19.2 0-27.5-8.2-27.5-27.5v-385l68.6 14.9c-7.3 23.9-11.4 49.2-11.4 75.5 0 146.2 122.5 264.9 273.4 264.9 151 0 273.5-118.7 273.5-264.9 0-26.3-4-51.6-11.3-75.5l67.2-14.9v385zM512.6 339.1c97.6 0 176.7 76.6 176.7 171.2 0 94.5-79.1 171.2-176.7 171.2-97.5 0-176.6-76.7-176.6-171.2 0-94.5 79.1-171.2 176.6-171.2zM842 72H182c-62.1 0-110 47.9-110 110v660c0 62.1 47.9 110 110 110h660c62.1 0 110-47.9 110-110V182c0-62.1-47.9-110-110-110z"
+                                        p-id="1016" fill="#202121"></path>
+                                </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-main">
+        <div class="main-left cur ">
+            <a href="" data-toggle="modal" data-target="#myModal">
+                <div class="btn-menu">
+                    <div class="bar1"></div> 
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <span class="trans">菜单</span>
+                </div>  
+            </a>
+        </div>
+        <div class="main-center trans">
+            <div class="btn-search">
+                    <?xml version="1.0" standalone="no"?>
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg t="1513581416261" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5381"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14">
+                        <defs>
+                            <style type="text/css"></style>
+                        </defs>
+                        <path d="M716.703712 214.076994c-138.708584-138.708584-363.918094-138.708584-502.626678 0s-138.708584 363.918094 0 502.626678c138.708584 138.708584 363.918094 138.708584 502.626678 0 138.708584-138.708584 138.708584-363.918094 0-502.626678zM136.277385 793.991481c-181.703127-181.703127-181.703127-476.011009 0-657.714136s476.011009-181.703127 657.714136 0 181.703127 476.011009 0 657.714136-476.011009 181.703127-657.714136 0z m868.592131 211.389835c-24.56831 24.56831-65.003654 25.08015-89.571964 0l-89.571964-89.571964c-24.56831-24.56831-24.56831-65.003654 0-89.571964 24.56831-24.56831 65.003654-24.56831 89.571964 0l89.571964 89.571964c25.08015 24.05647 25.08015 64.491814 0 89.571964 0.51184-0.51184 0-0.51184 0 0z"
+                            p-id="5382"></path>
+                    </svg>
+            </div>
+            <div class="home-logo">
+                    <a href="/">
+                        <svg width="178px" height="20px" viewBox="0 0 178 20">
+                            <path id="a1" class="logo-fill" d="M12.05,14.717H5.262l-1.635,4.962H0L6.815,0.328h3.681l6.814,19.351h-3.625L12.05,14.717z M8.643,3.679 c0,0-0.438,1.908-0.818,2.997l-1.717,5.178h5.07l-1.72-5.176C9.105,5.587,8.695,3.679,8.695,3.679S8.643,3.679,8.643,3.679z"></path>
+                            <g class="w w1 logo-fill">
+                                <path id="w1" d="M36.503,13.713c0.299,1.116,0.325,2.042,0.352,2.042h0.055c0,0,0.084-0.956,0.327-2.042l3.188-13.388 h3.626l-4.99,19.354h-4.06l-2.97-11.448c-0.326-1.254-0.493-2.534-0.493-2.534h-0.054c0,0-0.162,1.28-0.491,2.534l-2.972,11.447 H23.96l-4.85-19.35h3.625l3.054,13.387c0.246,1.09,0.327,2.042,0.327,2.042h0.055c0.029,0,0.052-0.926,0.355-2.042l3.489-13.387 h3.049L36.503,13.713z"></path>
+                            </g>
+                            <g class="w w2 logo-fill">
+                                <path id="w2" d="M62.264,0.328l-3.189,13.387c-0.244,1.09-0.325,2.042-0.325,2.042h-0.056 c-0.029,0-0.056-0.926-0.355-2.042L54.905,0.328h-3.053l-3.488,13.387c-0.301,1.114-0.327,2.042-0.355,2.042h-0.054 c0,0-0.086-0.954-0.326-2.042L45.345,3.691L43.628,11l2.173,8.679h4.062l2.971-11.447c0.326-1.254,0.492-2.534,0.492-2.534h0.052 c0,0,0.163,1.28,0.492,2.534l2.975,11.447h4.059l4.992-19.354L62.264,0.328L62.264,0.328z"></path>
+                            </g>
+                            <g class="w w3 logo-fill">
+                                <path id="w3" d="M84.101,0.328L80.91,13.715c-0.243,1.09-0.325,2.042-0.325,2.042h-0.057 c-0.025,0-0.052-0.926-0.351-2.042L76.74,0.328h-3.05L70.2,13.715c-0.302,1.114-0.326,2.042-0.354,2.042H69.79 c0,0-0.082-0.954-0.326-2.042L67.166,3.646l-1.717,7.309l2.189,8.726h4.06l2.97-11.447c0.326-1.255,0.493-2.535,0.493-2.535 h0.054c0,0,0.164,1.28,0.491,2.535l2.973,11.447h4.06l4.992-19.353H84.101L84.101,0.328z"></path>
+                            </g>
+                            <path id="a2" class="logo-fill" d="M101.934,14.717h-6.79l-1.632,4.962h-3.625l6.816-19.354h3.676l6.818,19.354h-3.63L101.934,14.717z M98.525,3.679c0,0-0.437,1.908-0.817,2.997l-1.716,5.178h5.067l-1.718-5.178c-0.355-1.093-0.762-2.997-0.762-2.997 S98.525,3.679,98.525,3.679z"></path>
+                            <path id="r" class="logo-fill" d="M112.402,0.328h6.241c2.099,0,3.053,0.163,3.895,0.548c1.937,0.869,3.164,2.726,3.164,5.287 c0,2.318-1.226,4.466-3.271,5.293v0.055c0,0,0.271,0.27,0.657,0.955l3.979,7.221h-3.924l-3.845-7.223h-3.382v7.221H112.4V0.328 H112.402z M119.078,9.404c1.88,0,3.053-1.117,3.053-3.053c0-1.853-0.789-2.997-3.543-2.997h-2.673v6.053L119.078,9.404 L119.078,9.404z"></path>
+                            <path id="d" class="logo-fill" d="M133.065,0.328h6.598c5.969,0,9.865,3.544,9.865,9.647c0,6.111-3.896,9.703-9.865,9.703h-6.598V0.328z M139.473,16.654c3.926,0,6.43-2.316,6.43-6.679c0-4.304-2.566-6.622-6.43-6.622h-2.891v13.301H139.473z"></path>
+                            <path id="s" class="logo-fill" d="M155.829,14.717c0,0,2.1,2.045,4.825,2.045c1.47,0,2.809-0.761,2.809-2.342 c0-3.465-9.134-2.866-9.134-8.805c0-3.218,2.78-5.615,6.487-5.615c3.818,0,5.779,2.071,5.779,2.071l-1.526,2.863 c0,0-1.86-1.688-4.284-1.688c-1.632,0-2.917,0.955-2.917,2.316c0,3.437,9.101,2.59,9.101,8.78c0,3.08-2.34,5.667-6.377,5.667 c-4.305,0-6.676-2.64-6.676-2.64L155.829,14.717z"></path>
+                            <path id="register" class="logo-fill" d="M174.572,0.276c1.853,0,3.328,1.497,3.328,3.383c0,1.896-1.476,3.384-3.328,3.384 c-1.819,0-3.287-1.487-3.287-3.384C171.285,1.775,172.753,0.276,174.572,0.276z M174.572,6.65c1.644,0,2.906-1.299,2.906-2.988 c0-1.683-1.263-2.989-2.906-2.989c-1.616,0-2.87,1.31-2.87,2.989C171.702,5.353,172.958,6.65,174.572,6.65z M173.492,1.793h1.24 c0.632,0,1.085,0.432,1.085,1.085c0,0.551-0.332,0.905-0.72,0.999v0.018c0,0,0.033,0.049,0.124,0.207l0.738,1.43H175.5 l-0.794-1.562h-0.805v1.562h-0.406L173.492,1.793L173.492,1.793z M174.686,3.613c0.43,0,0.71-0.276,0.71-0.736 c0-0.447-0.28-0.713-0.71-0.713h-0.785v1.449H174.686z"></path>
+                        </svg>
+                    </a>
+            </div>
+            <strong ><a data-toggle="modal" data-target="#login" class="trans login-btn">注册 / 登录</a></strong>
+        </div>
+        <div class="main-right trans">
+            <form action="">
+                <input type="button" value="提交你的站点">
+            </form>
+        </div>
+        <div id='hidden' class="trans">
+            <div class="dropdown trans cur">
+                全部
+                 <div class="cart trans"></div>
+                 <div class="menu-dropdown">
+                    <ul>
+                        <li><a href="">全部</a></li>
+                        <li><a href="">网站</a></li>
+                        <li><a href="">收藏</a></li>
+                        <li><a href="">元素</a></li>
+                        <li><a href="">杂志</a></li>
+                        <li><a href="">招聘</a></li>
+                        <li><a href="">用户</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="header-input">
+                <form>
+                    <input type="text" placeholder="搜寻灵感(H5/VR/RED/MINIMAL...)"></input>
+                </form>
+            </div>
+            
+            <div class="header-close trans">
+                    <?xml version="1.0" standalone="no"?>
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg t="1513604058126" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6355"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+                        <defs>
+                            <style type="text/css"></style>
+                        </defs>
+                        <path d="M540.4672 344.4736L214.6304 18.6368 69.8368 163.4304l325.8368 325.8368L69.8368 815.104l144.7936 144.7936 325.8368-325.8368L866.304 959.8976 1011.0976 815.104 685.2608 489.2672l325.8368-325.8368L866.304 18.6368z"
+                            p-id="6356" fill="#ffffff"></path>
+                    </svg>
+            </div>
+            <div class="search-info trans"><a>筛选信息</a></div>
+        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+      
+    </div>
+</header> 
+    </header>
+    <div class="content ">
+        <div class="site-head">
+            <div class="box-bg"><img src="../imgs/fml.jpg" alt=""></div>
+            <!-- 小屏显示的图片 -->
+            <div class="box-photo">
+                <a href="">
+                    <img src="../img/fml(1).jpg" alt="">
+                    <div class="ribbon"></div>
+                </a>
+            </div>
+            <div class="box-content trans">
+                <a href="" class="site-link trans"></a>
+                <div class="inner center-block">
+                    <div class="box-breadcrumb clearfix">
+                        <div class="box-left pull-left">
+                            <h4>今日最佳 <small>2017年12月26日</small></h4>
+                        </div>
+                        <div class="box-right pull-right ">
+                            <div class="br-box trans">
+                                <svg class="ico-svg trans" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" width="13" item-height="13">
+                                    <g id="share" data-size="14 14">
+                                        <path d="M11.096,8.365c-0.823,0-1.559,0.367-2.066,0.945L5.565,7.578C5.6,7.385,5.618,7.21,5.618,7 S5.6,6.615,5.565,6.422L9.029,4.69c0.508,0.578,1.243,0.945,2.066,0.945c1.504,0,2.729-1.225,2.729-2.73 c0-1.505-1.226-2.73-2.729-2.73c-1.506,0-2.73,1.225-2.73,2.73c0,0.193,0.018,0.385,0.053,0.578L4.953,5.215 C4.445,4.638,3.71,4.27,2.888,4.27C1.4,4.27,0.175,5.495,0.175,7S1.4,9.73,2.905,9.73c0.823,0,1.558-0.368,2.065-0.945l3.465,1.732 C8.4,10.71,8.383,10.885,8.383,11.096c0,1.504,1.225,2.729,2.729,2.729s2.713-1.226,2.713-2.729 C13.825,9.59,12.6,8.365,11.096,8.365z M11.096,1.54c0.752,0,1.364,0.612,1.364,1.365c0,0.753-0.612,1.365-1.364,1.365 c-0.754,0-1.365-0.612-1.365-1.365C9.73,2.152,10.342,1.54,11.096,1.54z M2.905,8.365C2.152,8.365,1.54,7.752,1.54,7 c0-0.752,0.612-1.365,1.365-1.365C3.658,5.635,4.27,6.248,4.27,7C4.27,7.752,3.658,8.365,2.905,8.365z M11.096,12.46 c-0.754,0-1.365-0.612-1.365-1.364c0-0.754,0.611-1.365,1.365-1.365c0.752,0,1.364,0.611,1.364,1.365 C12.46,11.848,11.848,12.46,11.096,12.46z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-info">
+                        <div class="row">
+                            <h1 class="heading-large"><a href="">FML</a></h1>
+                        </div>
+                        <div class="row">
+                            <div class="by">
+                                来自<strong>新西兰</strong>的设计师<strong class="str-color">GLADEYE AND HIGHLINE</strong>
+                            </div>
+                        </div>
+                        <div class="box-notesite">
+                            <ul>
+                                <li class="design">
+                                    <div class="circle">
+                                        <svg width="84" height="84">
+                                            <circle class="child1" r="38" cy="41" cx="41"></circle>
+                                            <circle r="38" cy="41" cx="41" stroke-linejoin="round" stroke-linecap="round" class="circle-progress" ></circle>
+                                        </svg>
+                                        <div class="percent">
+                                            <span class="int">7</span>
+                                            <span id="dec">.73</span>
+                                        </div>
+                                    </div>
+                                    <div class="legend">DESIGN</div>
+                                </li>
+                                <li class="usability">
+                                    <div class="circle">
+                                        <svg width="84" height="84">
+                                            <circle r="38" cy="41" cx="41" class="child1"></circle>
+                                            <circle r="38" cy="41" cx="41" stroke-linejoin="round" stroke-linecap="round" class="circle-progress"></circle>
+                                        </svg>
+                                        <div class="percent">
+                                            <span class="int">7</span>
+                                            <span id="dec2">.43</span>
+                                        </div>
+                                    </div>
+                                    <div class="legend">USABILITY</div>
+                                </li>
+                                <li class="creativity">
+                                    <div class="circle">
+                                        <svg width="84" height="84">
+                                            <circle r="38" cy="41" cx="41" class="child1"></circle>
+                                            <circle r="38" cy="41" cx="41" stroke-linejoin="round" stroke-linecap="round" class="circle-progress"></circle>
+                                        </svg>
+                                        <div class="percent">
+                                            <span class="int">8</span>
+                                            <span id="dec3">.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="legend">CREATIVITY</div>
+                                </li>
+                                <li class="con-tent">
+                                    <div class="circle">
+                                        <svg width="84" height="84">
+                                            <circle r="38" cy="41" cx="41" class="child1"></circle>
+                                            <circle r="38" cy="41" cx="41" stroke-linejoin="round" stroke-linecap="round" class="circle-progress"></circle>
+                                        </svg>
+                                        <div class="percent">
+                                            <span class="int">7</span>
+                                            <span id="dec4">.56</span>
+                                        </div>
+                                    </div>
+                                    <div class="legend">CONTENT</div>
+                                </li>
+                                <li class="developer">
+                                    <div class="circle">     
+                                        <svg width="84" height="84">
+                                            <circle r="38" cy="41" cx="41" class="child1"></circle>
+                                            <circle r="38" cy="41" cx="41" stroke-linejoin="round" stroke-linecap="round" class="circle-progress"></circle>
+                                        </svg>
+                                        <div class="percent">
+                                            <span class="int">7</span>
+                                            <span id="dec5">.73</span>
+                                        </div>
+                                    </div>
+                                    <div class="legend">DEVELOPER</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-bl"></div>
+                    <div class="box-br"></div>
+                </div>
+            </div>
+        </div>
+        <div class="p-0">
+            <div class="inner">
+                <div class="box-heading clear">
+                    <div class="box-left">
+                        <h4 class="pull-left">当日最佳&nbsp; <span class="pull-right"> 往日获奖者</span></h4>                   
+                    </div>
+                    <div class="box--right">
+                        <h4 class="pull-right">谷歌认证&nbsp;<span class="pull-right">移动端优秀作品</span></h4>
+                    </div>
+                </div>
+                <div class="grid container-fluid">
+                    <ul class="row">
+                        <li class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail t1">                                  
+                                <div class="over-hide">                 
+                                    <a><img src="../imgs/p-0-img1.png" alt="10x17" class="trans"></a>
+                                        <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                </div>
+                                <div class="padding- caption">
+                                    <h4><a href="">Nove</a></h4>
+                                    <p><strong ><a class="trans cur">Atelier Design</a></strong> 比利时</p>                                   
+                                    <p>December 19,2017</p>
+                                </div>                                   
+                            </div>              
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail t2">                                  
+                                <div class="over-hide">
+                                    <a><img src="../imgs/p-0-img2.png" alt="" class="trans cur"></a>
+                                    <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                </div>
+                                <div class="padding- caption">
+                                    <h4><a href="">10x17</a></h4>
+                                    <p><strong ><a class="trans cur">Eric Mortensen</a></strong> 美国</p>                                            
+                                    <p>December 19,2017</p>
+                                </div>                                   
+                            </div>                                 
+                        </li>
+                        <li class=" col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail t3">                                                                
+                                <div class="over-hide"> 
+                                    <a><img src="../imgs/p-0-img3.jpg" alt="" class="trans cur"></a>
+                                    <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                </div>                      
+                                <div class="ribbon"><img src="../imgs/ribbon.png" alt=""></div>
+                                <div class="padding- caption">
+                                    <h4><a href="">Red Collar's Team</a></h4>
+                                    <p><strong ><a class="trans cur">Red Collar</a></strong> 俄罗斯</p>                                            
+                                    <p>December 20,2017</p>
+                                </div>                                   
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- 第二部分标题 -->
+                <div class="box-heading clear">
+                    <div class="box-left">
+                        <h4 class="pull-left">候选网站一览&nbsp;<span class="pull-right">我们需要你宝贵的一票!</span></h4>                           
+                    </div>
+                </div>
+                <div class="grid container-fluid">
+                    <ul class="row">
+                        <li class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a>
+                                    <div class="over-hide">
+                                        <img src="../imgs/p-1-img1.jpg" alt="10x17" class="trans cur">
+                                        <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                        <a href="" class="bt-self bt-default cur trans black">VOTE NOW</a>
+                                    </div>
+                                </a>
+                                  
+                                
+                                <div class="padding- caption">
+                                    <h4>
+                                        <a href="">Austria</a>
+                                    </h4>
+                                    <p>
+                                        <strong>
+                                            <a class="trans cur">Condé Nast Creative Studio</a>
+                                        </strong> 俄罗斯</p>
+                                    <p>December 19,2017</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a>
+                                    <div class="over-hide">
+                                        <img src="../imgs/p-1-img2.jpg" alt="" class="trans cur">
+                                        <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                        <a href="" class="bt-self bt-default cur trans black">VOTE NOW</a>
+                                    </div>
+                                </a>
+                                <div class="padding- caption">
+                                    <h4>
+                                        <a href="">duotix</a>
+                                    </h4>
+                                    <p>
+                                        <strong>
+                                            <a class="trans cur">duotix</a>
+                                        </strong> 比利时</p>
+                                    <p>December 18,2017</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class=" col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a >
+                                    <div class="over-hide">
+                                        <img src="../imgs/p-1-img3.jpg" alt="" class="trans cur">
+                                        <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                        <a href="" class="bt-self bt-default cur trans black">VOTE NOW</a>
+                                    </div>
+                                    <!-- <div class="hover-vote">VOTE NOW</div> -->
+                                </a>
+                                <div class="padding- caption">
+                                    <h4>
+                                        <a href="">Delivery Day</a>
+                                    </h4>
+                                    <p>
+                                        <strong>
+                                            <a class="trans cur">EPIC Agency</a>
+                                        </strong> 比利时</p>
+                                    <p>December 21,2017</p>
+                                </div>
+                            </div>
+                        </li>
+                
+                    </ul>
+                </div>
+                    <!-- 名册 第三部分标题 -->
+                <div class="box-heading clear">
+                    <div class="box-left">
+                        <h4 class="pull-left">名册&nbsp;
+                            <span class="pull-right">寻找最优秀的媒体机构&amp; 专业人士</span>
+                        </h4>
+                    </div>
+                    <div class="box-right">
+                        <h4 class="pull-right">2，580家数字机构&nbsp;
+                            <a href="" class="bt-default cur trans black">Join the club</a>                                
+                        </h4>
+                    </div>
+                </div>
+                <div class="grid container-fluid">
+                    <ul class="row">
+                        <li class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="thumbnail t3">
+                                
+                                <div class="director caption">
+                                    <strong>最具权威的名单</strong>
+                                    <h3>发现来自</h3>
+                                    <div class="dropdown trans">
+                                        <button class="dm dropdown-toggle clear-btn" type="text" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            中国
+                                            
+                                        </button>
+                                        <ul class="dm-close dropdown-menu " aria-labelledby="dropdownMenu1">
+                                            <li>
+                                                <a href="#">美国</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">英国</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">法国</a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="#">爱尔兰</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">德国</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">意大利</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                   <div><h3>的权威工作室与专家</h3></div>
+                                   <span>已找到6家</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-4 modify-">
+                            <div class="thumbnail">
+                                <div class="over-hide">
+                                    <a><img src="../imgs/p-2-img1.jpg" alt="" class="trans cur"></a>
+                                    <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                </div>
+                                <div class="padding- caption">
+                                    <h4>
+                                        <a href="">EPIC Agency</a>
+                                    </h4>
+                                    <p>
+                                        <strong>
+                                            比利时
+                                            <a class="trans cur">查看名册</a>
+                                        </strong>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class=" col-xs-12 col-sm-6 col-md-4 modify-">
+                            <div class="thumbnail">  
+                                <div class="over-hide">
+                                    <a><img src="../imgs/p-2-img2.jpg" alt="" class="trans cur"></a>
+                                    <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                </div>
+                                    <!-- <div class="hover-vote">VOTE NOW</div> -->
+                                <div class="padding- caption">
+                                    <h4>
+                                        <a href="">Big Drop Inc</a>
+                                    </h4>
+                                    <p>
+                                        <strong>
+                                            美国
+                                            <a class="trans cur">查看名册</a>
+                                        </strong> </p>
+                                   
+                                </div>
+                            </div>
+                        </li>
+                
+                    </ul>
+                </div>
+                <!-- 第四部分标题 -->
+                <div class="box-heading clear">
+                        <div class="box-left">
+                            <h4 class="pull-left">资源
+                                <span class="heart-pulsate">
+                                        <?xml version="1.0" standalone="no"?>
+                                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                        <svg t="1513930921611" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="21665"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30">
+                                            <defs>
+                                                <style type="text/css"></style>
+                                            </defs>
+                                            <path d="M512.001535 864.600617l-52.919257-53.659107C262.53074 634.642225 134.015761 515.832282 134.015761 370.19125c0-118.810966 90.715071-210.79289 207.891818-210.79289 64.256466 0 128.512932 30.6603 170.092933 80.485079 41.577954-49.824779 105.835444-80.485079 170.093956-80.485079 117.173676 0 207.888747 91.981924 207.888747 210.79289 0 145.640008-128.512932 264.449951-325.065493 440.75026l-52.919257 53.659107h0.00307z"
+                                                p-id="21666" fill="#6deecd"></path>
+                                        </svg>
+                                        
+                                </span>
+                                <span class="pull-right">网页设计师的最爱！</span>
+                            </h4>
+                        </div>
+                       
+                </div>
+                <div class="grid container-fluid">
+                        <ul class="row">                          
+                            <li class="col-xs-12 col-sm-6 col-md-4 modify-">
+                                <div class="thumbnail ">  
+                                    <div class="over-hide">
+                                        <a><img src="../imgs/p-3-img1.jpg" alt="" class="trans cur"></a>
+                                        <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                    </div>
+                                    <div class="padding- caption">
+                                        <h4>
+                                            <a href="">到底什么才是产品设计师？</a>
+                                        </h4>
+                                        <p>现已加入精选文章
+                                            <strong class="str-color trans">
+                                                查看
+                                            </strong> </p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 modify-">
+                                    <div class="thumbnail p-3-2"> 
+                                        <div class="over-hide">
+                                            <a><img src="../imgs/p-3-img2.jpg" alt="" class="trans cur"></a>
+                                            <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                        </div>
+                                        <div class="padding- caption">
+                                            <h5>
+                                                <a href="">菜单的灵感</a>
+                                            </h5>
+                                            <p>由
+                                                <strong class="str-color trans">
+                                                    Awwwards团队
+                                                </strong>精心策划</p>
+                                            
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 modify-">
+                                    <div class="thumbnail video1">
+                                        <div class="over-hide">
+                                            <a><video src="../imgs/vedio2.mp4 " autoplay='autoplay' loop='loop'></a>
+                                            </video>
+                                            <div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div>
+                                        </div>
+                                        <div class="padding- caption">
+                                            <h4>
+                                                <a href="">到底什么才是产品设计师？</a>
+                                            </h4>
+                                            <p>现以加入精选文章
+                                                <strong class="str-color trans">
+                                                    查看
+                                                </strong> </p>
+                                            
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 modify-">
+                                    <div class="thumbnail ">
+                                        <div class="over-hide">
+                                            <a><img src="../imgs/p-3-img3.jpg" alt="" class="trans cur"></a>
+                                            <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                        </div>
+                                        <div class="padding- caption">
+                                            <h5>
+                                                <a href="">案例研究：Immersive Garden&amp;Havas 与其团队赢得SOTM11月赛事</a>
+                                            </h5>
+                                            <p>现已加入Web Design
+                                                <strong class="str-color trans">
+                                                    查看
+                                                </strong> </p>
+                                            
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 modify-">
+                                    <div class="thumbnail ">
+                                        <div class="over-hide">
+                                            <a><img src="../imgs/p-3-img4.jpg" alt="" class="trans cur"></a>
+                                            <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                        </div>
+                                        <div class="padding- caption">
+                                            <h5>
+                                                <a href="">学习CSS网格规范的11件事</a>
+                                            </h5>
+                                            <p>现已加入精选文章
+                                                <strong class="str-color trans">
+                                                    查看
+                                                </strong> </p>
+                                            
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 modify-">
+                                    <div class="thumbnail ">    
+                                        <div class="over-hide">
+                                            <a><img src="../imgs/p-3-img5.jpg" alt="" class="trans cur"></a>
+                                            <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                        </div>
+                                        <div class="padding- caption">
+                                            <h5>
+                                                <a href="">2018大数据趋势调查</a>
+                                            </h5>
+                                            <p>现已加入精选文章
+                                                <strong class="str-color trans">
+                                                    查看
+                                                </strong> </p>
+                                            
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 modify-">
+                                    <div class="thumbnail video1">
+                                            <div class="over-hide">
+                                                <a><video src="../imgs/vedio1.mp4 " autoplay='autoplay' loop="loop"></video></a>  
+                                                </video>
+                                                <div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div>
+                                            </div>
+                                        <div class="padding- caption">
+                                            <h4>
+                                                <a href="">到底什么才是产品设计师？</a>
+                                            </h4>
+                                            <p>现以加入精选文章
+                                                <strong class="str-color trans">
+                                                    查看
+                                                </strong> </p>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 modify-">
+                                    <div class="thumbnail ">
+                                        <div class="over-hide">
+                                            <a><img src="../imgs/p-3-img6.jpg" alt="" class="trans cur"></a>
+                                            <div class="img-hover"><div class="hover-item">
+    <a href="" class="bt-link trans">
+        <svg t="1514182328864" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1000"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="23">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M979.584 453.888 605.824 83.2l0 230.016c-5.12-0.256-10.112-0.768-15.232-0.768-309.376 0-560.256 248.704-560.256 555.52 0 2.048 0.256 4.096 0.384 6.272C106.24 711.808 271.616 598.784 463.872 598.784c49.408 0 97.024 7.808 141.952 21.632l0 204.16L979.584 453.888z"
+                p-id="1001" fill="#ffffff"></path>
+        </svg>
+    </a>
+</div></div>
+                                        </div>
+                                        <div class="padding- caption">
+                                            <h5>
+                                                <a href="">2018大数据趋势调查</a>
+                                            </h5>
+                                            <p>现已加入精选文章
+                                                <strong class="str-color trans">
+                                                    查看
+                                                </strong> </p>   
+                                        </div>
+                                    </div>
+                            </li>
+                        </ul>
+                        <div class="row load"><div class="col-md-6 col-md-offset-6"><a>加载更多...</a></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div class="inner footer-inner">
+        <div class="row footer-l">
+            <div class="col-md-6">    
+                <h4>互联网设计、创意与创新奖</h4>
+                <ul class="clearfix">
+                    <li><a href="">名录</a></li>
+                    <li><a href="">招聘岗位</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">cookies政策</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <p>私有云由<strong>Stackscale</strong>提供</p>
+                <ul class="footer-logo clearfix">
+                           <li>
+                                <a href="">
+                                        
+                                        <svg t="1513571895282" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1015"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14">
+                                            <defs>
+                                                <style type="text/css"></style>
+                                            </defs>
+                                            <path d="M842 319.5c0 15.2-12.3 27.5-27.5 27.5h-110c-15.2 0-27.5-12.3-27.5-27.5v-110c0-15.2 12.3-27.5 27.5-27.5h110c15.2 0 27.5 12.3 27.5 27.5v110z m0 495c0 19.3-8.3 27.5-27.5 27.5h-605c-19.2 0-27.5-8.2-27.5-27.5v-385l68.6 14.9c-7.3 23.9-11.4 49.2-11.4 75.5 0 146.2 122.5 264.9 273.4 264.9 151 0 273.5-118.7 273.5-264.9 0-26.3-4-51.6-11.3-75.5l67.2-14.9v385zM512.6 339.1c97.6 0 176.7 76.6 176.7 171.2 0 94.5-79.1 171.2-176.7 171.2-97.5 0-176.6-76.7-176.6-171.2 0-94.5 79.1-171.2 176.6-171.2zM842 72H182c-62.1 0-110 47.9-110 110v660c0 62.1 47.9 110 110 110h660c62.1 0 110-47.9 110-110V182c0-62.1-47.9-110-110-110z"
+                                                p-id="1016" fill="#202121"></path>
+                                        </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                        
+                                        <svg t="1513572778183" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1740"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16">
+                                            <defs>
+                                                <style type="text/css"></style>
+                                            </defs>
+                                            <path d="M962.267429 233.179429q-38.253714 56.027429-92.598857 95.451429 0.585143 7.972571 0.585143 23.990857 0 74.313143-21.723429 148.260571t-65.974857 141.970286-105.398857 120.32-147.456 83.456-184.539429 31.158857q-154.843429 0-283.428571-82.870857 19.968 2.267429 44.544 2.267429 128.585143 0 229.156571-78.848-59.977143-1.170286-107.446857-36.864t-65.170286-91.136q18.870857 2.852571 34.889143 2.852571 24.576 0 48.566857-6.290286-64-13.165714-105.984-63.707429t-41.984-117.394286l0-2.267429q38.838857 21.723429 83.456 23.405714-37.741714-25.161143-59.977143-65.682286t-22.308571-87.990857q0-50.322286 25.161143-93.110857 69.12 85.138286 168.301714 136.265143t212.260571 56.832q-4.534857-21.723429-4.534857-42.276571 0-76.580571 53.979429-130.56t130.56-53.979429q80.018286 0 134.875429 58.294857 62.317714-11.995429 117.174857-44.544-21.138286 65.682286-81.115429 101.741714 53.174857-5.705143 106.276571-28.598857z"
+                                                p-id="1741" fill="#202121"></path>
+                                        </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                       
+                                    <svg t="1513573019356" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2497"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13">
+                                        <defs>
+                                            <style type="text/css"></style>
+                                        </defs>
+                                        <path d="M567.893333 988.586667V537.642667h151.381334l22.613333-175.744H567.893333v-112.213334c0-50.858667 14.122667-85.546667 87.082667-85.546666h93.056V6.869333C731.946667 4.778667 676.736 0 612.437333 0 478.293333 0 386.432 81.92 386.432 232.32v129.578667H234.666667v175.744h151.765333V988.586667H567.893333z"
+                                            p-id="2498" fill="#202121"></path>
+                                        </svg>
+                                    </a>
+                            </li>
+                </ul>
+            </div>
+            <div class="col-md-6  clearfix">
+                    <div class="headline pull-right clearfix">
+                             <p>会议日程</p>
+                          
+                           <svg class="ico-svg" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" width='22' height='22'>
+                               <g id="calendar" data-size="14 14">
+                                   <path d="M12.857,1.413h-1.68V0h-1.4v1.413h-5.6V0h-1.4v1.413H1.12C0.501,1.413,0,1.915,0,2.533V12.88 C0,13.498,0.501,14,1.12,14h11.737c0.619,0,1.121-0.502,1.121-1.12V2.533C13.978,1.915,13.476,1.413,12.857,1.413z M12.578,12.6 h-11.2v-7h11.2V12.6z M12.578,4.2h-11.2V2.8h11.2V4.2z M6.417,7h1.4v1.4h-1.4V7z M9.216,7h1.4v1.4h-1.4V7z M6.417,9.8h1.4v1.4h-1.4 V9.8z M3.617,9.8h1.4v1.4h-1.4V9.8z"></path>
+                               </g>
+                           </svg>
+                           <a href="">柏林</a>&amp;
+                           <a href="">旧金山</a>
+                       </div>
+            </div>
+            <p class="pull-right">Next Conferences Berlin and San Franciso</p>
+            
+        </div>
+    </div>
+</footer>
+</div>
+<script src="../js/jquery-3.2.1.min.js"></script> 
+<script src="../js/home.js"></script>
+<script src="../js/bootstrap.js"></script>
+
+</body>
+</html>

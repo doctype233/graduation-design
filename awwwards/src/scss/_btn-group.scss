@@ -1,0 +1,46 @@
+@import "var";
+.describ{
+    padding: 50px 0;
+    border-bottom: $border;
+    background-color: #f4f7f6;
+    max-width: 870px;
+    margin:0 auto;
+    .des-inner{
+      text-align: center;
+      .tags-list{
+        ul{
+          box-sizing: inherit;
+          li{
+            margin: 0 5px 5px 0;
+            display: inline-block;
+            font-size: 14px;
+            a{
+              display: block;
+              height: 34px;
+              padding: 0 20px;
+              line-height: 34px;
+              border: 1px solid #202121;
+              border-radius: 36px;
+            }
+            .item{
+              width: 28px;
+              height: 28px;
+              line-height: 28px;
+              border-radius: 50%;
+              padding: 0;
+              border: none;
+            }
+            .black{
+              background-color: #000000;
+            }
+            .blue{
+              background-color:#2779a7; 
+            }
+            .yellow{
+              background-color: #ECD06F;
+            }
+          }
+        }
+      }
+    }
+  }
